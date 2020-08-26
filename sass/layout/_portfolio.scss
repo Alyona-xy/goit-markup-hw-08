@@ -1,0 +1,27 @@
+    /* Портфолио Main*/
+    .portfolio {
+        padding-top: 94px;
+        padding-bottom: 94px;
+
+        & .container {
+            display: flex;
+            justify-content: center;
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    }
+
+    
+    
+    .portfolio-projects {
+        box-sizing: border-box;
+
+    & .portfolio-projects-list {
+            justify-content: start;
+            box-sizing: border-box;
+        }
+    }
+    
+    
+    
+    

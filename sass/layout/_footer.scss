@@ -1,0 +1,39 @@
+ /* Footer*/
+ .footer-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2F303A; 
+
+    & .container {
+        box-sizing: content-box;
+        display:flex;
+        align-items: baseline;
+        width: 1170px;
+    }
+}
+
+
+
+.footer-info {
+    width: 231px;
+    margin-right: 69px;
+
+    & .logo {
+        margin-bottom: 20px;
+        margin-right: 0;
+        color: $background-color;
+    }
+
+    & .address {
+        font-style: normal;
+        text-decoration: none;
+        color:  rgba(255, 255, 255, 0.6)
+            }
+}
+
+
+
+
+
+
+
