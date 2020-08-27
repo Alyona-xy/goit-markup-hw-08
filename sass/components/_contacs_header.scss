@@ -1,7 +1,24 @@
 .contacts-list {
-    display: flex;
-    align-items: center;
+@media screen and (max-width: 767px) {
+    & {
+    display: none;
     }
+}
+
+@media screen and (min-width: 768px) {
+    & {
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 1200px) {
+        & {
+        display: flex;
+        align-items: center;
+        }
+    }
+} 
+}
     
     .contacts-list-item {
     display:flex;

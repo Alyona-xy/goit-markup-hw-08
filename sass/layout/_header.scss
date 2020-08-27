@@ -1,8 +1,31 @@
 /* Header*/
-
-.header .container {
-    display:flex;
-    justify-content: space-between;
+.navigation-menu-wrapper {
+    display: none;
 }
 
+.header {
+    
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    & {
+    width: 480px; 
+    height: 60px; 
+    padding-top: 16px;
+    padding-bottom: 16px;
+    
+}
+}
 
+/* @media screen and (min-width: 768px) {
+    & {
+    width: 768px; 
+    height: 80px;
+    display: flex;
+    justify-content: space-between; }
+}
+ */
+}
+
+.mobile-menu-button {
+    background-color: transparent;
+    border: none;
+}
