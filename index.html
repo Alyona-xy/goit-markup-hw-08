@@ -17,13 +17,13 @@
     <!--Шапка-->
 <a class="logo link" href="./index.html" lang="en"><span class="accent-logo-text">Web</span> Studio</a>
 
-<button type="button" class="mobile-menu-button" aria-expanded="false" aria-controls="navigation-menu-wrapper">
+<button type="button" class="mobile-menu-button" aria-expanded="false" aria-controls="navigation-menu-wrapper" data-menu-button>
 <svg class="mobile=menu-icons" width="40" height="40">
     <use class="icon-burger" href="./images/svg/sprite.svg#icon-mobile-menu"></use>
     <use class="icon-close" href="./images/svg/sprite.svg#icon-mobile-menu-close"></use></svg>
 </button>
 
-<div class="navigation-menu-wrapper">
+<div class="navigation-menu-wrapper" data-menu>
 <nav class="navigation">
     <ul class="navigation-list list">
     <li class="navigation-list-item"><a class="navigation-list-link active link" href="">Студия</a></li>
@@ -57,12 +57,12 @@
 
 <main>
 <!-- Герой-->
-<!-- <section class="hero overlay">
+<section class="hero overlay">
     <div class="container">
     <h1 class="hero-title animate__animated animate__pulse">Эффективные решения <br>для вашего бизнеса</h1>
     <button data-modal-open class="modal-button" aria-label="Заказать услугу"><span class="button-text">Заказать услугу</span></button>
 </div>
-</section> -->
+</section>
 
 <!-- О нас - скрытый заголовок-->
 <!-- <section class="about-us container">
@@ -472,10 +472,11 @@
     </svg>    
 </button>
 </form>
-</div>
+</div> -->
 
 
-<script src="./js/modal.js"></script> -->
+<script src="./js/menu.js"></script>
+<script src="./js/modal.js"></script>
     
 </body>
 </html>
