@@ -2,6 +2,7 @@
 
 .header {
     background-color: bisque;
+    box-sizing: border-box;
 
   @media screen and (min-width: 480px) and (max-width: 767px) {
     & {
@@ -17,43 +18,76 @@
     & {
       width: 768px;
       height: 80px;
+      padding-top: 21px;
+      padding-bottom: 21px;
       display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+    }
+  }
+
+  @media screen and (min-width: 1199px) {
+    & {
+      width: 1200px;
+      height: 80px;
+      padding-top: 0;
+      padding-bottom: 0;
+      padding-left: 15px;
+      padding-right: 15px;
+
+      display: flex;
+      align-items: baseline;
       justify-content: space-between;
     }
   }
 }
 
 .mobile-menu-button {
-  display: block;
-  background-color: transparent;
-  border: none;
-  width: 40px;
-  height: 40px;
-  padding: 0;
+
+@media screen and (max-width:767px) {
+  & {
+      display: block;
+      background-color: transparent;
+      border: none;
+      width: 40px;
+      height: 40px;
+      padding: 0;
+  }
 
   &.is-open {
-      .icon-close {
-          display: block;
-      }
+    .icon-close {
+        display: block;
+    }
 
-      .icon-burger {
-        display: none;
-      }
-  }
+    .icon-burger {
+      display: none;
+    }
+}
 }
 
-.mobile-menu-icons {
-     fill: black;
+@media screen and (min-width:768px) {
+   & {
+    display: none;
+   }
+}
+}
+
+@media screen and (max-width:767px) {
+  .mobile-menu-icons {
+    fill: black;
 }
 
 .icon-burger {
-    width: 24px;
-    height: 10px;
+   width: 24px;
+   height: 10px;
 }
 
 .icon-close {
-    display: none;
-    width: 19px;
-    height: 19px;
+   display: none;
+   width: 19px;
+   height: 19px;
 }
+}
+
+
 

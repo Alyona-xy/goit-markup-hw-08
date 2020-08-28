@@ -378,6 +378,8 @@ p {
   margin: 0 auto;
   justify-content: center;
   align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 @media screen and (min-width: 480px) {
@@ -394,16 +396,10 @@ p {
   }
 }
 
-@media screen and (max-width: 1199px) {
-  .container {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
+    justify-content: space-between;
   }
 }
 
@@ -414,17 +410,26 @@ p {
   color: #000000;
 }
 
+@media screen and (min-width: 768px) {
+  .logo {
+    display: flex;
+    margin-right: 81px;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .logo {
     font-size: 24px;
-    line-height: 1.17;
+    line-height: 1.167;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .logo {
     font-size: 26px;
-    line-height: 1.19;
+    line-height: 1.192;
+    padding-top: 24px;
+    margin-left: 0px;
     margin-right: 85px;
   }
 }
@@ -436,6 +441,7 @@ p {
 /* Header*/
 .header {
   background-color: bisque;
+  box-sizing: border-box;
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -452,41 +458,64 @@ p {
   .header {
     width: 768px;
     height: 80px;
+    padding-top: 21px;
+    padding-bottom: 21px;
     display: flex;
+    align-items: baseline;
     justify-content: space-between;
   }
 }
 
-.mobile-menu-button {
-  display: block;
-  background-color: transparent;
-  border: none;
-  width: 40px;
-  height: 40px;
-  padding: 0;
+@media screen and (min-width: 1199px) {
+  .header {
+    width: 1200px;
+    height: 80px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
 }
 
-.mobile-menu-button.is-open .icon-close {
-  display: block;
+@media screen and (max-width: 767px) {
+  .mobile-menu-button {
+    display: block;
+    background-color: transparent;
+    border: none;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+  }
+  .mobile-menu-button.is-open .icon-close {
+    display: block;
+  }
+  .mobile-menu-button.is-open .icon-burger {
+    display: none;
+  }
 }
 
-.mobile-menu-button.is-open .icon-burger {
-  display: none;
+@media screen and (min-width: 768px) {
+  .mobile-menu-button {
+    display: none;
+  }
 }
 
-.mobile-menu-icons {
-  fill: black;
-}
-
-.icon-burger {
-  width: 24px;
-  height: 10px;
-}
-
-.icon-close {
-  display: none;
-  width: 19px;
-  height: 19px;
+@media screen and (max-width: 767px) {
+  .mobile-menu-icons {
+    fill: black;
+  }
+  .icon-burger {
+    width: 24px;
+    height: 10px;
+  }
+  .icon-close {
+    display: none;
+    width: 19px;
+    height: 19px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -512,6 +541,12 @@ p {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .navigation-menu-wrapper {
+    display: flex;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .navigation {
     display: block;
@@ -523,8 +558,10 @@ p {
 
 @media screen and (min-width: 768px) {
   .navigation {
-    display: flex;
+    display: block;
+    justify-content: center;
     align-items: center;
+    margin-right: 84px;
   }
 }
 
@@ -539,6 +576,7 @@ p {
 @media screen and (min-width: 768px) {
   .navigation-list {
     display: flex;
+    margin-bottom: 0;
   }
 }
 
@@ -554,7 +592,7 @@ p {
 
 @media screen and (min-width: 768px) {
   .navigation-list-item:not(:last-child) {
-    margin-right: 40px;
+    margin-right: 50px;
   }
 }
 
@@ -612,6 +650,12 @@ p {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .active::after {
+    bottom: -33px;
+  }
+}
+
 @media screen and (min-width: 1199px) {
   .active {
     bottom: 0;
@@ -630,13 +674,16 @@ p {
   .contacts-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin-bottom: 21px;
   }
 }
 
 @media screen and (min-width: 768px) and (min-width: 1200px) {
   .contacts-list {
     display: flex;
-    align-items: center;
+    align-items: baseline;
   }
 }
 
@@ -657,6 +704,12 @@ p {
   }
   .contacts-list-item:not(:last-child) {
     margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-list-item:not(:last-child) {
+    margin-bottom: 10px;
   }
 }
 

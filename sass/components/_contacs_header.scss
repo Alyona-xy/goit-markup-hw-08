@@ -12,12 +12,15 @@
     & {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin-bottom: 21px;
     }
 
     @media screen and (min-width: 1200px) {
         & {
         display: flex;
-        align-items: center;
+        align-items: baseline;
         }
     }
 } 
@@ -40,6 +43,12 @@
         
         &:not(:last-child) {
             margin-bottom: 16px;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        &:not(:last-child) {
+            margin-bottom: 10px;
         }
     }
     }

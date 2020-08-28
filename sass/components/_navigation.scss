@@ -25,6 +25,12 @@
         opacity: 1;
     }
   }
+
+  @media screen and (min-width: 768px) {
+    & {
+        display: flex;
+    }
+}
 }
 
 .navigation {
@@ -39,8 +45,10 @@
 
 @media screen and (min-width: 768px) {
     & {
-    display: flex;
+    display: block;
+    justify-content: center;
     align-items: center;
+    margin-right: 84px;
     }
 }
 }
@@ -56,6 +64,7 @@
 @media screen and (min-width: 768px) {
     & {
         display: flex;
+        margin-bottom: 0;
     }
 }
 }
@@ -71,7 +80,7 @@
 
 @media screen and (min-width: 768px) {
     &:not(:last-child) {
-        margin-right: 40px;
+        margin-right: 50px;
     }
 }
 }
