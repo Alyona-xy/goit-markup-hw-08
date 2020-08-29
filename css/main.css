@@ -1111,6 +1111,12 @@ p {
   display: flex;
 }
 
+@media screen and (max-width: 1199px) {
+  .services {
+    display: none;
+  }
+}
+
 .services-list-item {
   position: relative;
 }
@@ -1150,11 +1156,24 @@ p {
   margin-bottom: 50px;
 }
 
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .subtitle {
+    font-size: 28px;
+  }
+}
+
 /* Our team */
 .our-team {
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: #F5F4FA;
+}
+
+@media screen and (min-width: 480px) {
+  .our-team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .our-team .container {
@@ -1164,27 +1183,59 @@ p {
   margin-bottom: 0px;
 }
 
-.our-team .subtitle {
-  margin-top: 0px;
-  margin-bottom: 50px;
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .our-team .our-team-list.container {
+    display: block;
+  }
+  .our-team .subtitle {
+    margin-top: 0px;
+    margin-bottom: 50px;
+  }
 }
 
-.our-team-list-item {
+@media screen and (min-width: 480px) and (max-width: 767px) and (min-width: 480px) {
+  .our-team .subtitle .our-team .subtitle {
+    margin-bottom: 30px;
+  }
+}
+
+.our-team .our-team-list-item {
   background: #FFFFFF;
   /* material shadow v1 */
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
 }
 
-.our-team-list-item:not(:last-child) {
+@media screen and (max-width: 767px) {
+  .our-team .our-team-list-item {
+    width: 450px;
+    height: 482px;
+  }
+}
+
+.our-team .our-team-list-item:not(:last-child) {
   margin-right: 30px;
 }
 
-.our-team-list-item-img {
+@media screen and (max-width: 767px) {
+  .our-team .our-team-list-item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+
+.our-team .our-team-list-item-img {
   margin-bottom: 30px;
 }
 
-.our-team-member {
+@media screen and (max-width: 767px) {
+  .our-team .our-team-list-item-img {
+    width: 450px;
+    height: 320px;
+  }
+}
+
+.our-team .our-team-member {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -1194,7 +1245,7 @@ p {
   margin-bottom: 10px;
 }
 
-.our-team-member-position {
+.our-team .our-team-member-position {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
