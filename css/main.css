@@ -419,6 +419,7 @@ p {
 
 @media screen and (max-width: 1199px) {
   .logo {
+    display: flex;
     font-size: 24px;
     line-height: 1.167;
   }
@@ -565,6 +566,15 @@ p {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .navigation {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0px;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .navigation-list {
     margin-left: auto;
@@ -577,6 +587,13 @@ p {
   .navigation-list {
     display: flex;
     margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .navigation-list {
+    display: flex;
+    margin-right: 315px;
   }
 }
 
@@ -618,9 +635,22 @@ p {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .navigation-list-link {
+    line-height: 1.14;
+  }
+}
+
 @media screen and (min-width: 1199px) {
-  :hover,
-  :focus {
+  .navigation-list-link {
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #212121;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .navigation-list-link:hover, .navigation-list-link:focus {
     color: #2196F3;
     outline: 1px;
     outline-color: transparent;
@@ -652,13 +682,13 @@ p {
 
 @media screen and (min-width: 768px) {
   .active::after {
-    bottom: -33px;
+    bottom: -34px;
   }
 }
 
 @media screen and (min-width: 1199px) {
-  .active {
-    bottom: 0;
+  .active::after {
+    bottom: 3px;
   }
 }
 
@@ -683,7 +713,9 @@ p {
 @media screen and (min-width: 768px) and (min-width: 1200px) {
   .contacts-list {
     display: flex;
-    align-items: baseline;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 0;
   }
 }
 
@@ -707,7 +739,7 @@ p {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
   .contacts-list-item:not(:last-child) {
     margin-bottom: 10px;
   }
@@ -927,18 +959,92 @@ p {
   pointer-events: none;
 }
 
+@media screen and (max-width: 1600px) {
+  .is-hidden {
+    display: none;
+  }
+}
+
 /* About us */
-.about-us {
-  padding-bottom: 94px;
-  padding-top: 94px;
+@media screen and (min-width: 480px) {
+  .about-us {
+    padding-bottom: 60px;
+    padding-top: 60px;
+    display: block;
+  }
 }
 
-.about-us-list {
-  display: flex;
+@media screen and (min-width: 768px) {
+  .about-us {
+    padding-bottom: 60px;
+    padding-top: 60px;
+    display: block;
+  }
 }
 
-.about-us-list-item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 1200px) {
+  .about-us {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .about-us-list {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about-us-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-us-list {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .about-us-list-item {
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about-us-list-item {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-us-list-item {
+    width: 270px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .about-us-list-item:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .about-us-list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-us-list-item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .about-us-list-item-icon {
@@ -953,6 +1059,24 @@ p {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 480px) {
+  .about-us-list-item-icon {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about-us-list-item-icon {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-us-list-item-icon {
+    width: 270px;
+  }
+}
+
 .about-us-list-item-title {
   margin-top: 0px;
   margin-bottom: 10px;
@@ -961,6 +1085,12 @@ p {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .about-us-list-item-title {
+    text-align: center;
+  }
 }
 
 .description {

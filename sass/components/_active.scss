@@ -21,16 +21,15 @@
 
 @media screen and (min-width:768px) {
     & {
-        bottom: -33px;
+        bottom: -34px;
     }
     }
-}
 
-
-
-@media screen and (min-width:1199px) {
-    & {
-        bottom: 0;
+    @media screen and (min-width:1199px) {
+        & {
+            bottom: 3px;
+        }
     }
 }
 }
+
