@@ -988,16 +988,36 @@ p {
   background-color: #2F303A;
 }
 
-.footer-container .container {
-  box-sizing: content-box;
-  display: flex;
-  align-items: baseline;
-  width: 1170px;
+@media screen and (min-width: 480px) {
+  .footer-container {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
-.footer-info {
-  width: 231px;
-  margin-right: 69px;
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+    width: 1170px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .footer-info {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-info {
+    width: 231px;
+    margin-right: 69px;
+  }
 }
 
 .footer-info .logo {
@@ -1012,8 +1032,12 @@ p {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-contacts-list {
-  padding-left: 0px;
+@media screen and (min-width: 480px) {
+  .footer-contacts-list {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+  }
 }
 
 .footer-contacts-list-item {
@@ -1033,8 +1057,16 @@ p {
 }
 
 /* Social links part*/
-.footer-social-links {
-  margin-right: 94px;
+@media screen and (min-width: 480px) {
+  .footer-social-links {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-social-links {
+    margin-right: 94px;
+  }
 }
 
 .footer-social-links .social-links-list {
@@ -1085,14 +1117,16 @@ p {
 }
 
 /*  Форма подписки в футере */
-.footer-subscribe-form {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  position: relative;
-  display: block;
-  width: 570px;
-  height: 86px;
+@media screen and (min-width: 1200px) {
+  .footer-subscribe-form {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    display: block;
+    width: 570px;
+    height: 86px;
+  }
 }
 
 .subscribe-title {
@@ -1106,9 +1140,11 @@ p {
   margin-bottom: 20px;
 }
 
-.subscribe-form {
-  display: flex;
-  align-items: center;
+@media screen and (min-width: 1200px) {
+  .subscribe-form {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .footer-subscribe-form-input {
@@ -1129,6 +1165,14 @@ p {
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (min-width: 480px) {
+  .footer-subscribe-form-input {
+    width: 450px;
+    display: block;
+    margin-bottom: 20px;
+  }
 }
 
 .footer-subscribe-form-button {
