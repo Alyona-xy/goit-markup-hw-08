@@ -1,24 +1,55 @@
     /* Портфолио Main*/
     .portfolio {
+
+@media screen and  (min-width: 480px) and (max-width: 1199px) {
+    & {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    & {
         padding-top: 94px;
         padding-bottom: 94px;
-
-        & .container {
+    }
+}
+       
+        /* & .container {
             display: flex;
             justify-content: center;
-            padding-left: 0px;
-            padding-right: 0px;
+            margin-left: auto;
+            margin-right: auto;
+        } */
+    }
+
+    .portfolio-projects {
+    @media screen and (min-width: 768px) {
+        & {
+        width: 100%;
+        }
+    }
+    }
+    
+
+    .portfolio-projects {
+    & .portfolio-projects-list {
+
+    @media screen and (min-width: 480px) {
+        & {
+            display: inline-block;
+            flex-wrap: wrap;
+            justify-content: start;
+            box-sizing: border-box;
         }
     }
 
-    
-    
-    .portfolio-projects {
-        box-sizing: border-box;
-
-    & .portfolio-projects-list {
+    @media screen and (min-width: 480px) {
+        & {
             justify-content: start;
             box-sizing: border-box;
+        }
+    }
         }
     }
     

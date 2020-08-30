@@ -1493,11 +1493,20 @@ p {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-self: baseline;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer-container {
     display: flex;
+    flex-wrap: nowrap;
     align-items: baseline;
-    width: 1170px;
   }
 }
 
@@ -1505,6 +1514,14 @@ p {
   .footer-info {
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-info {
+    width: 232px;
+    margin-left: 0;
+    margin-right: 165px;
   }
 }
 
@@ -1561,6 +1578,7 @@ p {
 @media screen and (min-width: 1200px) {
   .footer-social-links {
     margin-right: 94px;
+    margin-bottom: 0;
   }
 }
 
@@ -1605,6 +1623,14 @@ p {
 }
 
 /*  Форма подписки в футере */
+@media screen and (min-width: 768px) {
+  .footer-subscribe-form {
+    padding: 0;
+    margin: 0;
+    display: block;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer-subscribe-form {
     box-sizing: border-box;
@@ -1628,10 +1654,19 @@ p {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .subscribe-form {
+    display: block;
+    align-items: center;
+    justify-self: center;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .subscribe-form {
     display: flex;
     align-items: center;
+    justify-self: center;
   }
 }
 
@@ -1660,6 +1695,14 @@ p {
     width: 450px;
     display: block;
     margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-subscribe-form-input {
+    width: 358px;
+    display: block;
+    margin-bottom: 0;
   }
 }
 

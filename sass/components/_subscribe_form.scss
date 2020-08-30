@@ -2,6 +2,14 @@
 
 .footer-subscribe-form {
 
+@media screen and (min-width: 768px) {
+    & {
+        padding: 0;
+        margin: 0;
+        display: block;
+        }
+    }
+
 @media screen and (min-width: 1200px) {
     & {
     box-sizing: border-box;
@@ -13,7 +21,6 @@
     height: 86px;
     }
 }
-    
 }  
 
 .subscribe-title {
@@ -28,13 +35,21 @@
     }
 
 .subscribe-form {
+@media screen and (min-width: 768px) {
+        & {
+    display: block;
+    align-items: center;
+    justify-self: center;
+        }
+    }
+
 @media screen and (min-width: 1200px) {
         & {
     display: flex;
     align-items: center;
+    justify-self: center;
         }
     }
-
     
 }
 
@@ -65,7 +80,14 @@
     margin-bottom: 20px;
     }
 }
-    
+
+@media screen and (min-width: 1200px) {
+    & {
+    width: 358px;
+    display: block;
+    margin-bottom: 0;
+    }
+}
 
 }
 

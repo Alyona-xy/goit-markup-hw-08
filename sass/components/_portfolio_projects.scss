@@ -4,6 +4,15 @@
     display:flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+
+@media screen and (min-width: 768px) {
+    & {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+}
+    
 }
 
 .portfolio-projects-list-item {
@@ -20,20 +29,84 @@
 
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
-    &:nth-child(3n) {
-        margin-right: 0px;
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        & {
+            width: 450px;
+        }
     }
 
-    &:nth-last-child(-n+3){
+    @media screen and (min-width: 768px) and (max-width:1199px) {
+        & {
+    width: 354px;
+        }
+    }
+
+
+    &:nth-child(3n) {
+    @media screen and (min-width: 480px) {
+    & {
+        margin-right: 0px;
+            }
+        }
+
+    @media screen and (min-width: 768px) {
+    & {
+        margin-right: 0px;
+            }
+        }
+
+    @media screen and (min-width: 1200px) {
+    & {
+        margin-right: 0px;
+            }
+        }
+        
+    }
+
+    &:nth-last-child(-n+3) {
+
+        @media screen and (min-width: 480px) {
+            & {
+        margin-bottom: 30px;
+            }
+        }
+
+    @media screen and (min-width: 768px) {
+            & {
         margin-bottom: 0px;
+            }
+        }
+
+    @media screen and (min-width: 1200px) {
+            & {
+        margin-bottom: 0px;
+            }
+        }
     }
 
     &:hover,
     &:focus-within {
     box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
     }
+
+
+    &:not(:last-child) {
+    @media screen and (min-width: 480px) and (max-width: 767px)
+      {
+        & {
+        margin-bottom: 0px;
+        }
+    }
 }
 
+    &:last-child {
+    @media screen and (min-width: 480px) and (max-width: 767px) { &
+        {
+            margin-bottom: 0;
+        }
+    }
+}
+}
 
 .portfolio-projects-description-overlay {
     position: relative;
@@ -64,11 +137,24 @@
     color: $title-dark-theme-color;
     background-color: rgba(33, 150, 243, 0.9);
 
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        & {
+        width: 450px;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        & {
+        width: 354px;
+        }
+    }
+}
+
     .portfolio-projects-list-item:hover &,
     .portfolio-projects-list-item:focus-within & {
     transform: translateY(0);
     }
-}
+
 
 
 .portfolio-projects-list-item-img {
@@ -95,4 +181,11 @@ letter-spacing: 0.03em;
 color: $primary-text-color;
 padding-left: 24px;
 padding-bottom: 24px;
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+& {
+    padding-bottom: 20px;
+    }
 }
+}
+

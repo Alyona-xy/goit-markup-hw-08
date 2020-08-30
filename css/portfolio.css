@@ -830,40 +830,69 @@ p {
 }
 
 /* Портфолио Main*/
-.portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .portfolio {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .portfolio .container {
   display: flex;
   justify-content: center;
-  padding-left: 0px;
-  padding-right: 0px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.portfolio-projects {
-  box-sizing: border-box;
+@media screen and (min-width: 480px) {
+  .portfolio-projects .portfolio-projects-list {
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: start;
+    box-sizing: border-box;
+  }
 }
 
-.portfolio-projects .portfolio-projects-list {
-  justify-content: start;
-  box-sizing: border-box;
+@media screen and (min-width: 480px) {
+  .portfolio-projects .portfolio-projects-list {
+    justify-content: start;
+    box-sizing: border-box;
+  }
 }
 
 /* Список фильтров */
-.portfolio-filter-list {
-  margin-bottom: 50px;
+@media screen and (min-width: 480px) {
+  .portfolio-filter-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-filter-list {
+    margin-bottom: 50px;
+  }
 }
 
 .portfolio-filter-list-item {
-  box-sizing: border-box;
   height: 38px;
   margin-right: 0px;
 }
 
 .portfolio-filter-list-item:not(:last-child) {
   margin-right: 8px;
+}
+
+.portfolio-filter-list-item:nth-child(-n + 3) {
+  margin-bottom: 15px;
 }
 
 .portfolio-filter-list-button {
@@ -911,24 +940,70 @@ p {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-projects-list-item:nth-child(3n) {
-  margin-right: 0px;
+@media screen and (min-width: 480px) {
+  .portfolio-projects-list-item {
+    width: 450px;
+  }
 }
 
-.portfolio-projects-list-item:nth-last-child(-n+3) {
-  margin-bottom: 0px;
+@media screen and (min-width: 480px) {
+  .portfolio-projects-list-item:nth-child(3n) {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-projects-list-item:nth-child(3n) {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-projects-list-item:nth-child(3n) {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .portfolio-projects-list-item:nth-last-child(-n+3) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-projects-list-item:nth-last-child(-n+3) {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-projects-list-item:nth-last-child(-n+3) {
+    margin-bottom: 0px;
+  }
 }
 
 .portfolio-projects-list-item:hover, .portfolio-projects-list-item:focus-within {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
-.portfolio-projects-description-overlay {
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .portfolio-projects-list-item .portfolio-projects-list-item:not(:last-child) {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .portfolio-projects-list-item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.portfolio-projects-list-item .portfolio-projects-description-overlay {
   position: relative;
   overflow: hidden;
 }
 
-.portfolio-projects-description {
+.portfolio-projects-list-item .portfolio-projects-description {
   box-sizing: border-box;
   display: inline-block;
   width: 370px;
@@ -950,8 +1025,14 @@ p {
   background-color: rgba(33, 150, 243, 0.9);
 }
 
-.portfolio-projects-list-item:hover .portfolio-projects-description,
-.portfolio-projects-list-item:focus-within .portfolio-projects-description {
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .portfolio-projects-list-item .portfolio-projects-description {
+    width: 450px;
+  }
+}
+
+.portfolio-projects-list-item:hover .portfolio-projects-list-item,
+.portfolio-projects-list-item:focus-within .portfolio-projects-list-item {
   transform: translateY(0);
 }
 
@@ -981,6 +1062,12 @@ p {
   padding-bottom: 24px;
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .portfolio-projects-list-item-text {
+    padding-bottom: 20px;
+  }
+}
+
 /* Footer*/
 .footer-container {
   padding-top: 60px;
@@ -998,11 +1085,20 @@ p {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-self: baseline;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer-container {
     display: flex;
+    flex-wrap: nowrap;
     align-items: baseline;
-    width: 1170px;
   }
 }
 
@@ -1010,6 +1106,14 @@ p {
   .footer-info {
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-info {
+    width: 232px;
+    margin-left: 0;
+    margin-right: 165px;
   }
 }
 
@@ -1066,6 +1170,7 @@ p {
 @media screen and (min-width: 1200px) {
   .footer-social-links {
     margin-right: 94px;
+    margin-bottom: 0;
   }
 }
 
@@ -1117,6 +1222,14 @@ p {
 }
 
 /*  Форма подписки в футере */
+@media screen and (min-width: 768px) {
+  .footer-subscribe-form {
+    padding: 0;
+    margin: 0;
+    display: block;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer-subscribe-form {
     box-sizing: border-box;
@@ -1140,10 +1253,19 @@ p {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .subscribe-form {
+    display: block;
+    align-items: center;
+    justify-self: center;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .subscribe-form {
     display: flex;
     align-items: center;
+    justify-self: center;
   }
 }
 
@@ -1172,6 +1294,14 @@ p {
     width: 450px;
     display: block;
     margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-subscribe-form-input {
+    width: 358px;
+    display: block;
+    margin-bottom: 0;
   }
 }
 

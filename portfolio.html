@@ -9,11 +9,18 @@
 </head>
 <body>
     
-    <header class="header">
-        <div class="container">
+    <header class="header container">
         <!--Шапка-->
+    <a class="logo link" href="./index.html" lang="en"><span class="accent-logo-text">Web</span> Studio</a>
+    
+    <button type="button" class="mobile-menu-button" aria-expanded="false" aria-controls="navigation-menu-wrapper" data-menu-button>
+    <svg class="mobile=menu-icons" width="40" height="40">
+        <use class="icon-burger" href="./images/svg/sprite.svg#icon-mobile-menu"></use>
+        <use class="icon-close" href="./images/svg/sprite.svg#icon-mobile-menu-close"></use></svg>
+    </button>
+    
+    <div class="navigation-menu-wrapper" data-menu>
     <nav class="navigation">
-        <a class="logo link" href="./index.html" lang="en"><span class="accent-logo-text">Web</span> Studio</a>
         <ul class="navigation-list list">
         <li class="navigation-list-item"><a class="navigation-list-link link" href="./index.html">Студия</a></li>
         <li class="navigation-list-item"><a class="navigation-list-link active link" href="./portfolio.html">Портфолио</a></li>
@@ -39,9 +46,9 @@
         </svg>
         +38 096 111 11 11</address></a>
         </li>
-    
-        </ul>
+    </ul>
     </div>
+    
     </header>
     
 <main>
@@ -49,7 +56,7 @@
 <section class="portfolio container">
 <div class="portfolio-projects">
 <h1 class="portfolio-title" hidden>Наши проекты</h1>
-<ul class="portfolio-filter-list list container">
+<ul class="portfolio-filter-list list">
 <li class="portfolio-filter-list-item"><button type="button" class="portfolio-filter-list-button">Все</button></li>
 <li class="portfolio-filter-list-item"><button type="button" class="portfolio-filter-list-button">Веб-сайты</button></li>
 <li class="portfolio-filter-list-item"><button type="button" class="portfolio-filter-list-button">Приложения</button></li>
@@ -57,7 +64,7 @@
 <li class="portfolio-filter-list-item"><button type="button" class="portfolio-filter-list-button">Маркетинг</button></li>
 </ul>
 
-<ul class="portfolio-projects-list list container">
+<ul class="portfolio-projects-list list">
 <li class="portfolio-projects-list-item">
     <a class="portfolio-projects-list-item-link link" href="">
     <div class="portfolio-projects-description-overlay">
@@ -162,9 +169,10 @@
 
 </main>
 
-<footer class="footer-container">
-    <div class="container">
-        <!--Часть через див с лого и адресами-->
+<!-- Футер -->
+<footer class="footer-container container">
+
+    <!-- Часть через див с лого и адресами -->
     <div class="footer-info">
     <a class="logo link" href="./index.html" lang="en"><span class="accent-logo-text">Web</span> Studio</a>
     
@@ -177,49 +185,50 @@
     <li class="footer-contacts-list-item"><a class="footer-contacts-list-phone-link link" href="tel:+380991111111"><address class="address">+38 099 111 11 11</address></a>
     </li>
     </ul>
-    </div> 
+    </div>
     
     <!--Часть с призывом и иконками соц сетей-->
     <div class="footer-social-links">
     <b class="social-list-item-title">присоединяйтесь</b>
     <ul class="social-links-list list">
-        <li class="social-links-item">
-        <a class="social-links-item-link link" href="" aria-label="иконка инстаграма">
-        <svg class="social-links-item-link-icon-svg">
-        <use href ="./images/svg/sprite.svg#icon-instagram"></use>
-        </svg>    
-        </a>
-        </li>
-        
-        <li class="social-links-item">
-        <a class="social-links-item-link link" href="" aria-label="иконка твиттера">
-        <svg class="social-links-item-link-icon-svg">
-        <use href ="./images/svg/sprite.svg#icon-twitter"></use>
-        </svg>
-        </a>
-        </li>
-        
-        <li class="social-links-item">
-        <a class="social-links-item-link link" href="" aria-label="иконка фейсбука">
-        <svg class="social-links-item-link-icon-svg">
-        <use href ="./images/svg/sprite.svg#icon-facebook"></use>
-        </svg>    
-        </a>
-        </li>
-        
-        <li class="social-links-item">
-        <a class="social-links-item-link link" href="" aria-label="иконка ликедина">
-        <svg class="social-links-item-link-icon-svg">
-        <use href ="./images/svg/sprite.svg#icon-linkedin"></use>
-        </svg>
-        </a>
-        </li>
-        
-        </ul>
+    <li class="social-links-item">
+    <a class="social-links-item-link link" href="" aria-label="иконка инстаграма">
+    <svg class="social-links-item-link-icon-svg">
+    <use href ="./images/svg/sprite.svg#icon-instagram"></use>
+    </svg>    
+    </a>
+    </li>
+    
+    <li class="social-links-item">
+    <a class="social-links-item-link link" href="" aria-label="иконка твиттера">
+    <svg class="social-links-item-link-icon-svg">
+    <use href ="./images/svg/sprite.svg#icon-twitter"></use>
+    </svg>
+    </a>
+    </li>
+    
+    <li class="social-links-item">
+    <a class="social-links-item-link link" href="" aria-label="иконка фейсбука">
+    <svg class="social-links-item-link-icon-svg">
+    <use href ="./images/svg/sprite.svg#icon-facebook"></use>
+    </svg>    
+    </a>
+    </li>
+    
+    <li class="social-links-item">
+    <a class="social-links-item-link link" href="" aria-label="иконка ликедина">
+    <svg class="social-links-item-link-icon-svg">
+    <use href ="./images/svg/sprite.svg#icon-linkedin"></use>
+    </svg>
+    </a>
+    </li>
+    
+    </ul>
     </div>
-
+    
+    
     <!--Форма подписки-->
-<div class="footer-subscribe-form">
+    <div class="footer-subscribe-form">
     <b class="subscribe-title">Подпишитесь на рассылку</b>
     <form class="subscribe-form">
     <input class="footer-subscribe-form-input" type="e-mail" name="e-mail" placeholder="E-mail" autocomplete="off"/>
@@ -233,8 +242,9 @@
     </form>
     </div>
     
-    </div>     
     </footer>
+
+    <script src="./js/menu.js"></script>
     
 </body>
 </html>
