@@ -10,9 +10,9 @@
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 738px;
     }
 }
-    
 }
 
 .portfolio-projects-list-item {
@@ -33,7 +33,7 @@
 
     @media screen and (min-width: 768px) and (max-width:1199px) {
         & {
-    width: 354px;
+    width: calc((100%-45px)/2);
         }
     }
 
@@ -142,6 +142,11 @@
     color: $title-dark-theme-color;
     background-color: rgba(33, 150, 243, 0.9);
 
+.portfolio-projects-list-item:hover &,
+.portfolio-projects-list-item:focus-within & {
+        transform: translateY(0);
+        }
+        
     @media screen and (min-width: 480px) and (max-width: 767px) {
         & {
         width: 450px;
@@ -155,16 +160,9 @@
     }
 }
 
-    .portfolio-projects-list-item:hover &,
-    .portfolio-projects-list-item:focus-within & {
-    transform: translateY(0);
-    }
-
-
 
 .portfolio-projects-list-item-img {
     align-items: center;
-    width: 370px;
 }
 
 .portfolio-projects-list-item-title {

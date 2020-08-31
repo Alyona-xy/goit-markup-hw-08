@@ -1,7 +1,6 @@
 /* Header*/
 
 .header {
-    background-color: bisque;
     box-sizing: border-box;
 
   @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -26,7 +25,7 @@
     }
   }
 
-  @media screen and (min-width: 1199px) {
+  @media screen and (min-width: 1200px) {
     & {
       width: 1200px;
       height: 80px;
@@ -43,51 +42,53 @@
 }
 
 .mobile-menu-button {
-
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
   & {
       display: block;
       background-color: transparent;
-      border: none;
+      border: solid 1px;
       width: 40px;
       height: 40px;
       padding: 0;
   }
+}
+
+  @media screen and (min-width: 768px) {
+    & {
+        display: none;
+       }
+    }
 
   &.is-open {
     .icon-close {
-        display: block;
+      display: block;
     }
-
     .icon-burger {
       display: none;
     }
 }
+
 }
 
-@media screen and (min-width:768px) {
-   & {
-    display: none;
-   }
-}
-}
-
+.mobile-menu-icons {
 @media screen and (max-width:767px) {
-  .mobile-menu-icons {
+  & {
     fill: black;
+}
+}
 }
 
 .icon-burger {
    width: 24px;
    height: 10px;
+   fill: black;
 }
 
 .icon-close {
    display: none;
    width: 19px;
    height: 19px;
+   fill: black;
 }
-}
-
 
 
