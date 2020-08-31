@@ -46,7 +46,7 @@
   & {
       display: block;
       background-color: transparent;
-      border: solid 1px;
+      border: none;
       width: 40px;
       height: 40px;
       padding: 0;
@@ -82,13 +82,23 @@
    width: 24px;
    height: 10px;
    fill: black;
+
+   /* .mobile-menu-button & {
+    fill: $accent-color;
+   } */
 }
+
+
 
 .icon-close {
    display: none;
    width: 19px;
    height: 19px;
    fill: black;
+
+   /* .mobile-menu-button & {
+    fill: $accent-color;
+   } */
 }
 
 
