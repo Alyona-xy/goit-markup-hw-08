@@ -1254,7 +1254,7 @@ p {
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .our-team-list-item {
     width: 354px;
     height: 422px;
@@ -1288,20 +1288,6 @@ p {
 
 .our-team-list-item-img {
   margin-bottom: 30px;
-}
-
-@media screen and (max-width: 767px) {
-  .our-team-list-item-img {
-    width: 450px;
-    height: 320px;
-  }
-}
-
-@media screen and (max-width: 1199px) {
-  .our-team-list-item-img {
-    width: 354px;
-    height: 260px;
-  }
 }
 
 .our-team-member {
