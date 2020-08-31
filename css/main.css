@@ -851,7 +851,7 @@ p {
   }
 }
 
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .hero {
     text-align: center;
     padding-top: 200px;
@@ -870,25 +870,47 @@ p {
   }
 }
 
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../images/jpg/main/mobile_header_img@2x.jpg");
+    background-size: contain;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .overlay {
     width: 768px;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../images/jpg/main/tablet_header-img.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../images/jpg/main/tablet_header_img.jpg");
     background-color: #2f303a;
     background-repeat: no-repeat;
   }
 }
 
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .overlay {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../images/jpg/main/tablet_header_img@2x.jpg");
+    background-size: contain;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .overlay {
+    min-width: 1200px;
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../images/jpg/main/destop_header_img.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../images/jpg/main/desktop_header_img.jpg");
     background-color: #2f303a;
     background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../images/jpg/main/desktop_header_img@2x.jpg");
+    background-size: contain;
   }
 }
 
@@ -905,7 +927,7 @@ p {
   }
 }
 
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .hero-title {
     font-size: 44px;
     line-height: 1.36;
@@ -947,7 +969,7 @@ p {
   }
 }
 
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .button-text {
     align-items: center;
   }
