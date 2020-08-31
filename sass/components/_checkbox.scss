@@ -9,6 +9,12 @@
     height: 24px;
     padding: 0;
     margin-bottom: 30px;
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+        & {
+    width: 370px;
+        }
+}
 }
 
 .modal-form-options-span {
@@ -20,6 +26,14 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: $primary-text-color;
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+    & {
+    font-size: 12px;
+    line-height: 1.667;
+    margin-left: 25px;
+    }
+}
 }
 
 .modal-form-options-span-link {
@@ -54,6 +68,13 @@
     border-radius: 2px;
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+        & {
+    top: 12%;
+    left: -1px;
+        }
+}
 
     .modal-form-checkbox:checked + & {
         border-color: $accent-color;

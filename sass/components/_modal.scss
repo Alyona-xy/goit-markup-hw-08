@@ -23,6 +23,11 @@
     .backdrop.is-hidden & {
         opacity: 0;
     }
+
+@media screen and (min-width:480px) and (max-width:1199px) {
+    width: 450px;
+    height: 609px;
+}
 }
 
 
@@ -55,6 +60,10 @@
     &:focus {
         outline-color: $accent-color;
     }
+
+@media screen and (min-width:480px) and (max-width:1199px) {
+    width: 370px;
+}
 }
 
 .modal-form-message {
@@ -69,6 +78,10 @@
 
     &:focus {
         outline-color: $accent-color;
+    }
+
+@media screen and (min-width:480px) and (max-width:1199px) {
+    width: 370px;
     }
 }
 
