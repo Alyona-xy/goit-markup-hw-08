@@ -4,9 +4,8 @@
     padding-bottom: 60px;
     background-color: #2F303A; 
 
-@media screen and (min-width: 480px) {
-        & {
-            display: block;
+@media screen and (max-width: 767px) {
+        & { display: block;
             justify-items: center;
             align-items: center;
             margin-left: auto;
@@ -16,7 +15,7 @@
 
 @media screen and (min-width: 768px) {
         & {
-            display:flex;
+            display: flex;
             flex-wrap: wrap;
             align-items: baseline;
             justify-self: baseline;
@@ -25,7 +24,7 @@
 
 @media screen and (min-width: 1200px) {
     & {
-        display:flex;
+        display: flex;
         flex-wrap: nowrap;
         align-items: baseline;
     }
@@ -34,7 +33,7 @@
 &.container {
 @media screen and (min-width: 480px) and (max-width: 767px) {
     & {
-        justify-items: center;
+        justify-content: center;
         align-items: center;
     }
 }
@@ -44,7 +43,7 @@
 
 .footer-info {
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
     & {
     margin-left: auto;
     margin-right: auto;
