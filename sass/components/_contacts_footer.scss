@@ -1,9 +1,9 @@
 .footer-contacts-list {
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
     & {
-margin-left: auto;
-margin-right: auto;
-margin-bottom: 60px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 60px;
     }
 }
 
@@ -24,4 +24,16 @@ margin-bottom: 9px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--background-color);
+    }
+
+.footer > .address {
+@media screen and (max-width:767px) {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;
+        }
     }
