@@ -3,7 +3,7 @@
 padding-top: 60px;
 padding-bottom: 60px;
 background-color: #2F303A;
-width:100%;
+width: 100%;
  }
 
 @media screen and (max-width: 767px) {
@@ -71,6 +71,7 @@ width:100%;
       width: 358px;
       margin-right: 8px;
     }
+  }
 
 /* @media screen and (min-width: 768px) {
         & {
@@ -96,6 +97,7 @@ width:100%;
 
 
 .footer-info {
+
 @media screen and (min-width: 1200px)  {
     & {
         width: 231px;
@@ -103,16 +105,15 @@ width:100%;
     }
 }
 
-    & .logo {
-        margin-bottom: 20px;
-        margin-right: 0;
-        color: $background-color;
-    }
-
-    & .address {
-        font-style: normal;
-        text-decoration: none;
-        color:  rgba(255, 255, 255, 0.6)
-            }
+  & .logo {
+    margin-bottom: 20px;
+    margin-right: 0;
+    color: $background-color;
 }
-  }
+
+& .address {
+    font-style: normal;
+    text-decoration: none;
+    color:  rgba(255, 255, 255, 0.6)
+        }
+}

@@ -27,9 +27,10 @@
 
 .about-us-list {
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
         & {
     display: block;
+    width: 100%;
     }
 }
 
@@ -49,7 +50,7 @@
 }
 
 .about-us-list-item {
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
     & {
     display: block;
     justify-content: center;
@@ -82,7 +83,7 @@
 
 .about-us-list-item:not(:last-child) {
 
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
     & {
         margin-bottom: 30px;
     }
@@ -106,7 +107,7 @@ height: 120px;
 margin: auto;
 margin-bottom: 30px;
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
     & {
     width: 450px;
     }
@@ -134,7 +135,7 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 color: $title-text-color;
 
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
     & {
     text-align: center;
     }

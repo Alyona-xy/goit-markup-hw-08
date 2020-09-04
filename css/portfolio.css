@@ -382,7 +382,7 @@ p {
   padding-right: 15px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .container {
     width: 480px;
     display: flex;
@@ -408,6 +408,7 @@ p {
   font-weight: 700;
   letter-spacing: 0.03em;
   color: #000000;
+  display: flex;
 }
 
 @media screen and (min-width: 768px) {
@@ -443,7 +444,7 @@ p {
   box-sizing: border-box;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .header {
     position: relative;
     width: 100%;
@@ -591,7 +592,7 @@ p {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .navigation-list {
     margin-left: auto;
     margin-right: auto;
@@ -687,7 +688,7 @@ p {
   border-radius: 2px;
 }
 
-@media screen and (min-width: 480) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .active::after {
     margin-bottom: 40px;
   }
@@ -699,7 +700,7 @@ p {
   }
 }
 
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .active::after {
     bottom: 3px;
   }
@@ -781,7 +782,7 @@ p {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .contacts-mail-link {
     font-size: 18px;
     line-height: 1.16;
@@ -802,7 +803,7 @@ p {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .contacts-phone-link {
     font-size: 18px;
     line-height: 1.16;
@@ -1185,7 +1186,9 @@ p {
     width: 358px;
     margin-right: 8px;
   }
-  /* @media screen and (min-width: 768px) {
+}
+
+/* @media screen and (min-width: 768px) {
         & {
     justify-self: baseline;
         }
@@ -1197,7 +1200,7 @@ p {
         flex-wrap: nowrap;
         align-items: baseline;
     } */
-  /* 
+/* 
 & > .container {
 @media screen and (min-width: 480px) and (max-width: 767px) {
     & {
@@ -1205,26 +1208,23 @@ p {
         text-align: center;
     }
 } */
-}
-
-@media screen and (min-width: 1200px) and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .footer-info {
     width: 231px;
     margin-right: 69px;
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .footer-info .logo {
-    margin-bottom: 20px;
-    margin-right: 0;
-    color: #FFFFFF;
-  }
-  .footer-info .address {
-    font-style: normal;
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.6);
-  }
+.footer-info .logo {
+  margin-bottom: 20px;
+  margin-right: 0;
+  color: #FFFFFF;
+}
+
+.footer-info .address {
+  font-style: normal;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 @media screen and (max-width: 767px) {
@@ -1264,7 +1264,7 @@ p {
 }
 
 /* Social links part*/
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .footer-social-links {
     margin-bottom: 60px;
   }
@@ -1407,7 +1407,7 @@ p {
   color: rgba(255, 255, 255, 0.6);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .footer-subscribe-form-input {
     width: 450px;
     display: block;
