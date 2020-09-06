@@ -58,7 +58,6 @@
     .address {
     font-style: normal;
     text-decoration: none;
-    display: flex;
     justify-content: baseline;
     align-items: center;
 
@@ -68,6 +67,15 @@
     align-items: center;
         }
     }
+
+    @media screen and (min-width:768px) {
+        & {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+        }
+    }
+
     }
 
 

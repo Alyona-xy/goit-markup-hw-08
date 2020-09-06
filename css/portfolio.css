@@ -408,7 +408,6 @@ p {
   font-weight: 700;
   letter-spacing: 0.03em;
   color: #000000;
-  display: flex;
 }
 
 @media screen and (min-width: 768px) {
@@ -686,12 +685,11 @@ p {
   height: 4px;
   background-color: #2196F3;
   border-radius: 2px;
+  /* @media screen and (max-width:767px) {
+    & {
+        margin-bottom: 40px;
 }
-
-@media screen and (max-width: 767px) {
-  .active::after {
-    margin-bottom: 40px;
-  }
+} */
 }
 
 @media screen and (min-width: 768px) {
@@ -762,13 +760,20 @@ p {
 .address {
   font-style: normal;
   text-decoration: none;
-  display: flex;
   justify-content: baseline;
   align-items: center;
 }
 
 @media screen and (max-width: 767px) {
   .address {
+    justify-content: baseline;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .address {
+    display: flex;
     justify-content: baseline;
     align-items: center;
   }
@@ -1123,6 +1128,13 @@ p {
   width: 100%;
 }
 
+.footer > .container {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 @media screen and (max-width: 767px) {
   .footer > .container {
     display: block;
@@ -1142,11 +1154,6 @@ p {
 }
 
 @media screen and (min-width: 768px) {
-  .footer > .container {
-    display: flex;
-    align-items: baseline;
-    flex-wrap: wrap;
-  }
   .footer-social-links {
     margin-bottom: 60px;
     margin-right: 89px;
@@ -1161,7 +1168,7 @@ p {
   .footer-info {
     margin-left: 60px;
     text-align: center;
-    justify-content: center;
+    justify-content: space-between;
   }
   .footer-subscribe-form {
     margin: 60px auto 0;
@@ -1408,6 +1415,14 @@ p {
 }
 
 @media screen and (max-width: 767px) {
+  .footer-subscribe-form-input {
+    width: 450px;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .footer-subscribe-form-input {
     width: 450px;
     display: block;
